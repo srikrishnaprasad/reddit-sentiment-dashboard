@@ -1,0 +1,20 @@
+
+
+## Use a base image with Python and Streamlit
+FROM python:3.10
+
+# Set working directory
+WORKDIR /app
+
+# Copy files
+COPY . /app
+
+# Install dependencies
+RUN pip install -r requirements.txt
+
+# Streamlit port
+EXPOSE 8051
+
+# 👇 This will print your message first, then run Streamlit
+ENTRYPOINT ["/bin/bash", "-c"]
+CMD ["echo '🔗 Local URL: http://localhost:8051' && streamlit run app.py --server.port=8051 --server.address=0.0.0.0"]
