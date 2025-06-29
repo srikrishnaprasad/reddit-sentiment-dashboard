@@ -3,7 +3,7 @@
 ![WhatsApp Image 2025-06-24 at 12 02 20 PM](https://github.com/user-attachments/assets/50f3212d-5278-4feb-8e67-18259d726184)
 ### In this project 
 
-### • We are making use of the Reddit API, accessed through the PRAW (Python Reddit API Wrapper) library, to fetch the latest comments from six popular subreddits. Authentication is done using a Reddit developer   ### account with client_id, client_secret, and user_agent.
+### • We are making use of the Reddit API, accessed through the PRAW (Python Reddit API Wrapper) library, to fetch the latest comments from six  subreddits. Authentication is done using a Reddit developer account with client_id, client_secret, and user_agent.
 
 ### 1) Reddit comments are extracted with the help of a Lambda function, which is automatically triggered every 1 minute using Amazon EventBridge to ensure continuous data collection.
 
